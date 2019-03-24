@@ -27,14 +27,11 @@ function! fizard#open_help()
 
   " open floating window
   call nvim_open_win(
-        \ winnr,
+        \ hbufnr,
         \ v:true,
         \ ww - margin,
         \ wh - margin,
         \ {'relative': 'editor', 'row': margin, 'col':margin}
   \ )
-
-  " move help buffer
-  execute ":b" . hbufnr
 endfunction
 
