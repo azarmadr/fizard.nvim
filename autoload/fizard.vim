@@ -1,7 +1,7 @@
 function! fizard#open_help()
   " get current buffer(window) info
   let bufnr = bufnr('%')
-  let winnr = winbufnr(bufnr)
+  let winnr = bufwinnr(bufnr)
   let wh = winheight(winnr)
   let ww = winwidth(winnr)
   let margin = 10
