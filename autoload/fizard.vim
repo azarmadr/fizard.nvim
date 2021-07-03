@@ -29,9 +29,7 @@ function! fizard#open_help()
   call nvim_open_win(
         \ hbufnr,
         \ v:true,
-        \ ww - margin,
-        \ wh - margin,
-        \ {'relative': 'editor', 'row': margin, 'col':margin}
+        \ {'relative': 'editor', 'width': ww - margin, 'height': wh - margin, 'row': margin, 'col':margin}
   \ )
 endfunction
 
